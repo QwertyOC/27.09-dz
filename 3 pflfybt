@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int maxNumber;
+    int number;
+
+    cout << "Введите 1 число: ";
+    cin >> maxNumber;
+
+    for (int i = 2; i <= 7; i++) {
+        cout << "Введите " << i << " число: ";
+        cin >> number;
+
+        if (number > maxNumber) {
+            maxNumber = number;
+        }
+    }
+
+    cout << "Максимальное число: " << maxNumber << endl;
+
+    return 0;
+
+
+
+}
