@@ -1,0 +1,25 @@
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int number;
+    cout << "Введите четырехзначное число: ";
+    cin >> number;
+
+    if (number >= 1000 && number <= 9999) {
+        int digit1 = number / 1000;
+        int digit2 = (number / 100) % 10;
+        int digit3 = (number / 10) % 10;
+        int digit4 = number % 10;
+
+        int swappedNumber = digit3 * 1000 + digit4 * 100 + digit1 * 10 + digit2;
+
+        cout << "Число с замененными цифрами: " << swappedNumber << endl;
+    }
+    else {
+        cout << "Ошибка" << endl;
+    }
+
+    return 0;
+}
